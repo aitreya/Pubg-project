@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin pannel</title>
+  <link rel="stylesheet" href="/admin.css" />
+  <link rel="icon" href="/logo.png" type="image/icon type" />
+  <script defer async="" src="https://www.googletagmanager.com/gtag/js?id=UA-163708086-1"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+  <!--socket.io script-->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- Ajax request script -->
+  <script defer src="/adminsrc.js"></script> <!-- Main Script -->
+  <script defer>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-163708086-1');
+  </script>
+</head>
+
+<body>
+  <div id="imgcon"><a href="/"><img src="/logo.png" alt="GameRewards.tech" /></a></div>
+  <div id="maincon">
+    <h1>Admin Pannel</h1>
+    <h2>System Information</h2>
+    <li>CPU Name : <%=cpuname%></li>
+    <li>CPU Cores : <%=cpucores%></li>
+    <li>Total Memory : <%=ram%></li>
+    <li>OS : <%=os%></li>
+    <div id="systemstats" style="margin-top: 40px;">
+      <h2>System Monitor</h2>
+      <li>CPU. : <span id="cpu">0</span>%</li>
+      <li>RAM. : <span id="ram">0</span>%</li>
+      <li>Uptime : <span id="uptime">00:00:00</span></li>
+    </div>
+    <div id="mailerbox" style="margin-top: 40px;">
+      <h2>Mail Section</h2>
+      <form action="#" id="mailform">
+        <select name="gameselect" id="gameselect" class="inpmail" required>
+          <option value="0" selected>Select Game</option>
+          <option value="1">Pubg Mobile</option>
+          <option value="2">Freefire</option>
+        </select>
+        <input type="date" name="date" class="inpmail" id="date" placeholder="Enter Date" required>
+        <input type="time" name="time" class="inpmail" id="time" placeholder="Enter Time" required>
+        <h4>**Note : Only Enter Numbers do not use Reg or p or f in the Numbers.</h4>
+        <input type="number" class="inpmail" name="regstart" id="regstart" placeholder="Starting Registration Number"
+          required>
+        <input type="number" class="inpmail" name="regend" id="regend" placeholder="Ending Registration Number"
+          required>
+        <div style="display: block;text-align: center;">
+          <input type="submit" value="Send" id="sendMailBtn" class="mailbtns">
+          <input type="button" value="Fetch Responce" id="responcefetch" class="mailbtns">
+        </div>
+      </form>
+      <p id="mailresult"></p>
+    </div>
+    <div id="viewdata">
+      <h2>View Registrations</h2>
+      <div id="viewbuttons">
+        <button id="pubgdatashow" class="viewbtns" onclick='pubgdataconvert()'>Show Pubg Registrations</button>
+        <button id="freefiredatashoe" class="viewbtns" onclick="freefiredataconvert()">Show Freefire Registrations</button>
+      </div>
+      <p id="showdata"></p>
+    </div>
+  </div>
+</body>
+
+</html>

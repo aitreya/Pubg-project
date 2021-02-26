@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163708086-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-163708086-1');
+    </script>
+    <title>Register in Pubg Mobile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/714b8ed437.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/regformstyle.css">
+    <link rel="icon" href="/logo.png" type="image/icon type">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- this meta viewport is required for BOLT //-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- BOLT Sandbox/test //-->
+    <script id="bolt" src="https://sboxcheckout-static.citruspay.com/bolt/run/bolt.min.js" bolt- color="e34524"
+        bolt-logo="http://boltiswatching.com/wp-content/uploads/2015/09/Bolt-Logo-e14421724859591.png"></script>
+    <!-- BOLT Production/Live //-->
+    <!--// script id="bolt" src="https://checkout-static.citruspay.com/bolt/run/bolt.min.js" bolt-color="e34524" bolt-logo="http://boltiswatching.com/wp-content/uploads/2015/09/Bolt-Logo-e14421724859591.png"></script //-->
+
+</head>
+
+<body>
+    <div id="imgcon"><a href="/"><img src="/logo.png" alt="GameRewards.tech"></a></div>
+    <div id="maincon">
+        <h1 class="prihea">Register for PubgMobile Match</h1>
+        <form action="#" id="payment_form">
+            <input type="hidden" id="udf5" name="udf5" value="BOLT_KIT_NODE_JS" readonly/>
+            <input type="hidden" id="surl" name="surl" value="/pubgresult" readonly/>
+            <input type="hidden" id="key" name="key" placeholder="Merchant Key" value="U0QERrVB" readonly/>
+            <input type="hidden" id="salt" name="salt" placeholder="Merchant Salt" value="YPikEblPGK" readonly/>
+            <input type="hidden" id="amount" name="amount" placeholder="Amount" value="20"  readonly/> 
+            <input type="hidden" id="pinfo" name="pinfo" placeholder="Product Info" value="Registration" />
+            <span style="display: none;"><input type="text" id="hash" name="hash" placeholder="Hash" value="" readonly/></span>
+            <span style="display: none;"><input type="text" id="txnid" name="txnid" placeholder="Transaction ID" value="<%= orderid %>" readonly/></span>
+            <div class="inpbox">
+                <h2 class="place">Video Tutorial</h2>
+                <p class="description">We highly insist you to please watch the video tutorial before Registration of
+                    the match so that you get to know all the detalis of the site and no problem arises with your
+                    registration process.Everthing is explained brieflt in the tutorial Video linked below</p>
+                <iframe class="vid" src="https://www.youtube.com/embed/rmBGx2tCUqw" allowfullscreen></iframe>
+            </div>
+            <div class="inpbox" id="namebox">
+                <h2 class="place">Enter Your Name</h2>
+                <p class="description">Enter your full name here</p>
+                <i class="fa fa-user ico"></i>
+                <input type="text" name="fname" id="fname" class="text" required>
+            </div>
+            <div class="inpbox" id="emailbox">
+                <h2 class="place">Enter Your Email</h2>
+                <p class="description">Enter Your email-id here You will recieve room id and password on thid email id
+                    only.</p>
+                <i class="fa fa-envelope ico"></i>
+                <input type="email" name="email" id="email" class="text" required>
+            </div>
+            <div class="inpbox" id="pubgidbox">
+                <h2 class="place">Your Pubg Id name</h2>
+                <p class="description">Enter Your Pubg id name and you can join the room through this id only,so please
+                    enter your Pubg gaming name correctly and carefully.</p>
+                <i class="fa fa-gamepad ico"></i>
+                <input type="text" name="gameid" id="gameid" class="text" required>
+            </div>
+            <div class="inpbox" id="phonebox">
+                <h2 class="place">Your Mobile Number</h2>
+                <p class="description">Enter Your Mobile Number in case we want to cantact you immediately.</p>
+                <i class="fa fa-phone-square ico"></i>
+                <input type="text" name="mobile" id="mobile" class="text" required>
+            </div>
+            <div id="alertinfo" class="dv"></div>
+            <input type="submit" value="Pay" onclick="launchBOLT(); return false;" class="btn"/></div>
+        </form>
+    </div>
+    <footer>
+        All &copy; Rights are Reserved by Gamerewards.tech
+    </footer>
+    <script type="text/javascript"><!--
+        $('#payment_form').bind('keyup blur', function(){
+            $.ajax({
+                  url: '/hashing',
+                  type: 'post',
+                  data: JSON.stringify({ 
+                    key: $('#key').val(),
+                    salt: $('#salt').val(),
+                    txnid: $('#txnid').val(),
+                    amount: $('#amount').val(),
+                    pinfo: $('#pinfo').val(),
+                    fname: $('#fname').val(),
+                    email: $('#email').val(),
+                    mobile: $('#mobile').val(),
+                    udf5: $('#udf5').val()
+                  }),
+                  contentType: "application/json",
+                  dataType: 'json',
+                  success: function(json) {            
+                    $('#hash').val(json);            
+                  }
+                }); 
+        });
+        //-->
+        </script>
+        <script type="text/javascript"><!--
+        function launchBOLT()
+        {
+            bolt.launch({
+            key: $('#key').val(),
+            txnid: $('#txnid').val(), 
+            hash: $('#hash').val(),
+            amount: $('#amount').val(),
+            firstname: $('#fname').val(),
+            email: $('#email').val(),
+            phone: $('#mobile').val(),
+            productinfo: $('#pinfo').val(),
+            udf5: $('#udf5').val(),
+            surl : $('#surl').val(),
+            furl: $('#surl').val()
+        },{ responseHandler: function(BOLT){
+            console.log( BOLT.response.txnStatus );		
+            if(BOLT.response.txnStatus != 'CANCEL')
+            {
+                //Salt is passd here for demo purpose only. For practical use keep salt at server side only.
+                var fr = '<form action=\"'+$('#surl').val()+'\" method=\"post\">' +
+                '<input type=\"hidden\" name=\"key\" value=\"'+BOLT.response.key+'\" />' +
+                '<input type=\"hidden\" name=\"salt\" value=\"'+$('#salt').val()+'\" />' +
+                '<input type=\"hidden\" name=\"txnid\" value=\"'+BOLT.response.txnid+'\" />' +
+                '<input type=\"hidden\" name=\"amount\" value=\"'+BOLT.response.amount+'\" />' +
+                '<input type=\"hidden\" name=\"productinfo\" value=\"'+BOLT.response.productinfo+'\" />' +
+                '<input type=\"hidden\" name=\"firstname\" value=\"'+BOLT.response.firstname+'\" />' +
+                '<input type=\"hidden\" name=\"email\" value=\"'+BOLT.response.email+'\" />' +
+                '<input type=\"hidden\" name=\"udf5\" value=\"'+BOLT.response.udf5+'\" />' +
+                '<input type=\"hidden\" name=\"mihpayid\" value=\"'+BOLT.response.mihpayid+'\" />' +
+                '<input type=\"hidden\" name=\"status\" value=\"'+BOLT.response.status+'\" />' +
+                '<input type=\"hidden\" name=\"hash\" value=\"'+BOLT.response.hash+'\" />' +
+                '<input type=\"hidden\" name=\"gameid\" value=\"'+$('#gameid').val()+'\" />' +
+                '<input type=\"hidden\" name=\"mobile\" value=\"'+$('#mobile').val()+'\" />' +
+                '</form>';
+                var form = jQuery(fr);
+                jQuery('body').append(form);								
+                form.submit();
+            }
+        },
+            catchException: function(BOLT){
+                 alert( BOLT.message );
+            }
+        });
+        }
+        //--
+        </script>
+</body>
+
+</html>

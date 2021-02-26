@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163708086-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163708086-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/desktop.css">
+    <link rel="stylesheet" href="/animation.css">
+    <link rel="stylesheet" href="/registration.css">
+    <link rel="stylesheet" media="screen and (max-width: 850px)" href="/phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 650px)" href="/registration_mob.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="/logo.png" type="image/icon type">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script data-ad-client="ca-pub-9440571284174897" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- navigation bar work starts -->
+    <nav id="navabar">
+        <div id="logo" class="navpart">
+            <img src="/logo.png" alt="2nd try.com" id="logoimg">
+        </div>
+        <img src="/Hicon.png" alt="2nd try.com" id="ham">
+        <div id="navcontain">
+            <div class="items"> <a href="/">Home</a></div>
+            <div class="items active"> <a href="Registration.html">Registration</a></div>
+            <div class="items"><a href="Notification.html">Notifications</a></div>
+            <div class="items"><a href="Videos.html">Videos</a></div>
+            <div class="items"><a href="about.html">About Us</a></div>
+        </div>
+    </nav>
+
+    <div id="navphone">
+        <img src="/close-icon.png" alt="close" id="cicoham">
+        <ul>
+            <li class="hamitem" id="hindex"><a href="/">Home</a></li>
+            <li class="hamitem" id="hreg"><a class="hactive" href="Registration.html">Registration</a></li>
+            <li class="hamitem" id="hnoti"><a href="Notification.html">Notification</a></li>
+            <li class="hamitem" id="hvid"><a href="Videos.html">Videos</a></li>
+            <li class="hamitem" id="habout"><a href="about.html">About us</a></li>
+        </ul>
+    </div>
+
+    <!-- navigation bar work ends -->
+
+    <!-- the work of Registration starts Here -->
+
+    <div class="con">
+        <h3 class="hhh">Here in this Section you can Register for participation in games.</h3>
+
+        <p>The price will be given according to chart listed below. The prizes are applicable for both Pubg Mobile and
+            Freefire. Curently we are only organising solo matches we will soon be starting duo and squad matches. All
+            prizes will be distributed within 12hours of completion of the Match only in the player follows the <a
+                href="#rules">rules</a> which are mentioned below, if the participant are found voilating any of the
+            rules he/she might not get the prize even if he is eligible of it due to its amazing performance.
+            Please refer to the <a href="#prize"> prize distribution chart</a> from below.</p>
+
+        <div id="imgcon"><img src="/table.JPG" alt="Distribution Table" id="prize"></div>
+
+        <h3>You will also get a prize on every kill that you do, That is Rs 12/Kill.</h3>
+
+        <p>After Successful registration you will recieve an email within 12hours of Successfull registration<b> You
+                will Get the Room ID and Password 30min Before the match on your E-mAil address </b></b>If you get any
+            of the position above then also you will get the kill ammount aacording to the number of kill you have
+            done.One More Important Things if You got 1st,2nd,3rd position and you have not done a single kill your
+            winning prize will be reduced to 50%,In case of any query you can contact us through a help button below.
+        </p>
+
+        <p><b>Full Tutorial of registration and everything is available</b><a href="Videos.html"> here</a></p>
+
+        <h3 class="hhh">Now go Register and enjoy.</h3>
+        <input type="button" class="regbtn" value="Register in Pubg Mobile" id="regpubg">
+        <input type="button" class="regbtn" value="Register in Freefire" id="regfree">
+        <div class="con1">
+            <h2 class="sechea" id="rules">Rules</h2>
+            <div>
+                <ul>
+                    <li>Team up is Strictly Restricted.</li>
+                    <li>Emulator is allowed, So enjoy.</li>
+                    <li>You can only join with Pubg,Freefire username that is been filled while the time of
+                        registration.</li>
+                    <li>You can not share the room id or password with anyone.</li>
+                    <li>A player should not use any type of Hacks.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- the work of Registration ends Here -->
+
+    <!-- Help button Work -->
+    <a><img id="helpbtn" src="/help.png" alt="Help Button"></a>
+    <div id="helpcon">
+        <img src="/close-icon.png" alt="close" id="cico">
+        <br id="brr">
+        <form id="form" action="/Reg" method="post">
+            <p> Name</p>
+            <div>
+                <input name="name" type="text" id="name" class="inp" required>
+            </div>
+            Email:
+            <div>
+                <input name="email" type="email" class="inp" id="email" required>
+            </div>
+            Your Query:
+            <div>
+                <textarea name="query" cols="40" rows="10" class="inp" id="quear" required></textarea>
+            </div>
+            <button id="qebtn" type="submit">Submit</button>
+        </form>
+        <h3 id="succ" style="display: none; margin: 20px;">Your Query has been Submitted Successfully.We will try to fix
+            it ASAP.</h3>
+    </div>
+    <!-- Footer button Work Starts Here -->
+    <footer>
+        All &copy; Rights are Reserved by gamerewards.tech
+    </footer>
+    <script src="/help btn.js"></script>
+    <script src="/registration.js"></script>
+    <script src="/ham menu.js"></script>
+    <script src="/shared.js"></script>
+
+</body>
+
+</html>

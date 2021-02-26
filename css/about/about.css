@@ -1,0 +1,50 @@
+#pripo{
+    width: 70%;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: white 2px  solid;
+    box-shadow: black 5px 5px 10px;
+}
+.cont{
+    text-align: center;
+}
+section{
+    background: black;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px khaki solid;
+}
+#hhh{
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 1rem;
+    border-bottom: olivedrab 5px solid;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.sitedec{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+#devs li{
+    margin: 10px;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+h2{
+    color: blue;
+    margin: 5px 20px;
+    padding: 0px 10px;
+}
+#conus li{
+    margin: 10px;
+}
+#conus a{
+    color: white;
+    text-decoration: none;
+}
+#conus a:hover{
+    color: khaki;
+    text-decoration: underline;
+}

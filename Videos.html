@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163708086-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163708086-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="/desktop.css">
+    <link rel="stylesheet" href="/videos.css">
+    <link rel="stylesheet" href="/animation.css">
+    <link rel="stylesheet" media="screen and (max-width: 850px)" href="/phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 850px)" href="/videos_mob.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="/logo.png" type="image/icon type">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script data-ad-client="ca-pub-9440571284174897" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+</head>
+
+<body>
+    <!-- navigation bar work starts -->
+    <nav id="navabar">
+        <div id="logo" class="navpart">
+            <img src="/logo.png" alt="2nd try.com" id="logoimg">
+        </div>
+        <img src="/Hicon.png" alt="2nd try.com" id="ham">
+        <div id="navcontain">
+            <div class="items"> <a href="/">Home</a></div>
+            <div class="items"> <a href="Registration.html">Registration</a></div>
+            <div class="items"><a href="Notification.html">Notifications</a></div>
+            <div class="items active"><a href="Videos.html">Videos</a></div>
+            <div class="items"><a href="about.html">About Us</a></div>
+        </div>
+    </nav>
+
+    <div id="navphone">
+        <img src="/close-icon.png" alt="close" id="cicoham">
+        <ul>
+            <li class="hamitem" id="hindex"><a href="/">Home</a></li>
+            <li class="hamitem" id="hreg"><a href="Registration.html">Registration</a></li>
+            <li class="hamitem" id="hnoti"><a href="Notification.html">Notification</a></li>
+            <li class="hamitem" id="hvid"><a class="hactive" href="Videos.html">Videos</a></li>
+            <li class="hamitem" id="habout"><a href="about.html">About us</a></li>
+        </ul>
+    </div>
+
+    <!-- navigation bar work ends -->
+
+    <!-- work of videos starts from Here -->
+
+    <div id="contain">
+        <div id="part1">
+            <div class="pt1items">
+                <h1>Tutorials</h1>
+                <iframe class="vid" src="https://www.youtube.com/embed/rmBGx2tCUqw" allowfullscreen></iframe>
+            </div>
+            <div class="pt1items">
+                <h1>Live</h1>
+                <h3>Currently there are no live Match(s) are going on, when a live match will happen it will be streamed
+                    here in this section.</h3>
+            </div>
+        </div>
+        <div id="part2">
+            <div class="pt2items">
+                <h1>Highlights</h1>
+                <h3>Highlights of all the Match(s) will be available here in this section.</h3>
+                <div id="highvid">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Help button Work -->
+    <a><img id="helpbtn" src="/help.png" alt="Help Button"></a>
+    <div id="helpcon">
+        <img src="/close-icon.png" alt="close" id="cico">
+        <br id="brr">
+        <form id="form" action="/Vid" method="post">
+            <p> Name</p>
+            <div>
+                <input name="name" type="text" id="name" class="inp" required>
+            </div>
+            Email:
+            <div>
+                <input name="email" type="email" class="inp" id="email" required>
+            </div>
+            Your Query:
+            <div>
+                <textarea name="query" cols="40" rows="10" class="inp" id="quear" required></textarea>
+            </div>
+            <button id="qebtn" type="submit">Submit</button>
+        </form>
+        <h3 id="succ" style="display: none; margin: 20px;">Your Query has been Submitted Successfully.We will try to fix
+            it ASAP.</h3>
+    </div>
+    <!-- Footer button Work Starts Here -->
+    <footer>
+        All &copy; Rights are Reserved by Gamerewards.tech
+    </footer>
+    <script src="/help btn.js"></script>
+    <script src="/ham menu.js"></script>
+    <script src="/shared.js"></script>
+</body>
+
+</html>
