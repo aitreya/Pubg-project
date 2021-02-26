@@ -84,7 +84,7 @@ nav::before{
     text-transform: uppercase;
     border-radius: 2rem;
     text-align: center;
-
+    background: rgb(8,8,140);
     box-shadow: 15px 15px 30px blue,-3px -3px blue;
     border-radius: 1rem;
     display: block;

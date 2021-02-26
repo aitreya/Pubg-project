@@ -5,7 +5,7 @@ regpubg.addEventListener("click",function all()
 {
     let gofront = confirm("Do you want to register for match of Pubg Mobile ?");
     if(gofront)
-    window.open("https://forms.gle/JUKdZnAkvL9H63x69");
+    window.open("/pubgform","_self");
 
 })
 regfree.addEventListener("click",function all()
@@ -13,6 +13,6 @@ regfree.addEventListener("click",function all()
     let gofront = confirm("Do you want to register for match of FreeFire ?");
     if(gofront)
     {
-        window.open( "https://forms.gle/DZwHd23CEwL4ao9g9");
+        window.open("freefireform","_self");
     }
 })

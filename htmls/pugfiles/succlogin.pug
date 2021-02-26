@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Success Login 
+    script(src="/jsonconvert.js")
+    link(rel="stylesheet" href="/jsonconvert.css")
+    link(rel='icon', href='/logo.png', type='image/icon type')
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-163708086-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-163708086-1');
+  body
+    #imgcon
+      a(href="/")
+        img(src='/logo.png' alt='GameRewards.tech')
+    .buttonbox
+      input(type='button' onclick='tableFromJson1()' value='View Pubg registration data')
+      input(type='button' onclick='tableFromJson2()' value='View Freefire registration data')
+    p#showData
+    p#pubgdata.hide=pubgdata
+    p#freefiredata.hide=freefiredata

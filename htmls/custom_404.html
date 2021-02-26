@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Page not found</title>
-    <link rel="icon" href="../photos/logo.png" type="image/icon type">
+    <link rel="icon" href="/logo.png" type="image/icon type">
     <style>
         body {
             /* background: gray; */
@@ -41,6 +41,7 @@
             cursor: pointer;            
             font-family: 'Roboto', sans-serif;
             box-shadow: #0145d4 0px 0px 10px;
+            outline: none;
         }
         button:hover{
             transform: scale(1.2);
@@ -53,6 +54,15 @@
         }
         img{
             margin-top: 20px;
+        }
+        #imgcon {
+            text-align: center;
+        }
+
+        #imgcon img {
+            width: 120px;
+            margin: 20px;
+            border-radius: 50px;
         }
         @media(max-width: 740px){
             img{
@@ -69,10 +79,11 @@
 </head>
 
 <body>
-    <img src="../photos/404.png" alt="" Error 404>
+    <div id="imgcon"><a href="/"><img src="/logo.png" alt="GameRewards.tech"></a></div>
+    <img src="/404.png" alt="" Error 404>
     <h1>Error 404</h1>
     <h2>The page you have been looking for might have been removed had its name changed, temporarily unavailable or
         might never exist.</h2>
-    <button><a href="../">Go to Homepage</a></button>
+    <button><a href="/">Go to Homepage</a></button>
 </body>
 <html

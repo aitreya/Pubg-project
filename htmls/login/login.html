@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Gamerewards</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163708086-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-163708086-1');
+    </script>
+    <link rel="icon" href="/logo.png" type="image/icon type">
+    <style>
+        body {
+            background-image: linear-gradient(to right, #544a7d, #ffd452);
+        }
+
+        #imgcon {
+            text-align: center;
+        }
+
+        #imgcon img {
+            width: 80px;
+            margin: 20px;
+            border: 2px red solid;
+            border-radius: 50px;
+            box-shadow: 4px 4px red;
+        }
+
+        input {
+            border: none;
+            border-bottom: 3px solid black;
+            background: none;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 400px;
+            font-size: 1.4rem;
+            outline: none;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding: 10px;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            border: black 2px solid;
+            margin: 10px auto;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h3 {
+            margin: 10px auto;
+            font-size: 1.5rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="imgcon"><a href="/"><img src="/logo.png" alt="GameRewards.tech"></a></div>
+    <form action="/login" method="post">
+        <div>
+            <h3>Name </h3>
+            <input type="text" name="username" id="username" required>
+            <h3>Password</h3>
+            <input type="password" name="password" id="password" required>
+            <button type="submit" class="btn" value="">Login</button>
+        </div>
+    </form>
+</body>
+
+</html>
