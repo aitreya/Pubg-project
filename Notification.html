@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163708086-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163708086-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification </title>
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/notification/notification.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" media="screen and (max-width: 850px)" href="css/phone.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/notification/notifiaction_mob.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="photos/logo.png" type="image/icon type">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script data-ad-client="ca-pub-9440571284174897" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+</head>
+
+<body>
+    <!-- navigation bar work starts -->
+    <nav id="navabar">
+        <div id="logo" class="navpart">
+            <img src="photos/logo.png" alt="2nd try.com" id="logoimg">
+        </div>
+        <img src="photos/Hicon.png" alt="2nd try.com" id="ham">
+        <div id="navcontain">
+            <div class="items"> <a href="/">home</a></div>
+            <div class="items"> <a href="Registration.html">Registration</a></div>
+            <div class="items active"><a href="Notification.html">Notifications</a></div>
+            <div class="items"><a href="Videos.html">Videos</a></div>
+            <div class="items"><a href="about.html">About Us</a></div>
+        </div>
+    </nav>
+
+    <div id="navphone">
+        <img src="photos/close-icon.png" alt="close" id="cicoham">
+        <ul>
+            <li class="hamitem" id="hindex"><a href="/">Home</a></li>
+            <li class="hamitem" id="hreg"><a href="Registration.html">Registration</a></li>
+            <li class="hamitem" id="hnoti"><a class="hactive" href="Notification.html">Notification</a></li>
+            <li class="hamitem" id="hvid"><a href="Videos.html">Videos</a></li>
+            <li class="hamitem" id="habout"><a href="about.html">About us</a></li>
+        </ul>
+    </div>
+
+    <!-- navigation bar work ends -->
+
+    <!-- Notification work starts here  -->
+
+    <div class="mcon">
+        <!-- <div class="notis">
+        <li> Notification Here</li>
+        <p class="date">-date to enter</p>
+        <p class="time">-time to enter</p>
+    </div> -->
+        <div class="notis">
+            <li> First Match is not yet scheduled you will see a notification here as soon as it is scheduled.</li>
+            <p class="date">-21/03/2020</p>
+            <p class="time">-21:40</p>
+        </div>
+        <div class="notis">
+            <li> Webite Published</li>
+            <p class="date">-20/03/2020</p>
+            <p class="time">-00:00</p>
+        </div>
+
+
+    </div>
+
+    <!-- Notification end starts here -->
+
+    <!-- Help button Work -->
+    <a><img id="helpbtn" src="photos/help.png" alt="Help Button"></a>
+    <div id="helpcon">
+        <img src="photos/close-icon.png" alt="close" id="cico">
+        <br id="brr">
+        <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+            <p> Name</p>
+            <div>
+                <input name="entry.1168356574" type="text" id="name" class="inp">
+            </div>
+            Email:
+            <div>
+                <input name="entry.1041394139" type="email" class="inp" id="email">
+            </div>
+            Your Query:
+            <div>
+                <textarea name="entry.1232027923" cols="40" rows="10" class="inp" id="quear"></textarea>
+            </div>
+            <button id="qebtn">Submit</button>
+        </form>
+        <h3 id="succ" style="display: none; margin: 20px;">Your Query has been Submitted Successfully.We will try to fix
+            it ASAP.</h3>
+    </div>
+
+    <!-- Footer button Work Starts Here -->
+    <footer>
+        All &copy; Rights are Reserved by gamerewards.tech
+    </footer>
+    <script src="javascripts/help btn.js"></script>
+    <script src="/javascripts/ham menu.js"></script>
+</body>
+
+</html>

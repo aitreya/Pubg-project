@@ -1,0 +1,183 @@
+/* reset */
+*{
+    margin: 0px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    color: rgb(255, 255, 255);
+    /* background: #406b69; */
+    background: rgb(8, 8, 70);
+}
+
+/* work on navigation bar */
+
+nav{
+    display: flex; 
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+nav::before{
+    background-color: black;
+    position: absolute;
+    content: "";
+    height:70px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.5;
+}
+nav div{
+    display: flex;
+}
+#navcontain{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+}
+
+
+.items a{
+    color: rgb(255, 255, 255);
+    padding: 6px 25px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: all 150ms ease-in-out;
+}
+.items a:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.3);
+}
+#logoimg{
+    height: 50px;
+    margin: 10px 20px;
+    border: pink 2px solid;
+    border-radius: 40px;
+    padding: 1px;
+}
+#ham{
+    display: none;
+}
+#navphone{
+    display: none;
+}
+
+/* navigation bar work completed */
+
+
+/* footer */
+footer{    
+    color: white;
+    font-size: 1rem;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+
+/* utility classes */
+@media(min-width: 650px)
+{
+.prihea{
+        text-align: center;
+        padding: 30px;
+        font-size: 5vw;
+        color: red;
+        text-shadow: 0px 0px 15px yellow;
+        text-transform: uppercase;
+        border-radius: 2rem;
+        text-align: center;
+        box-shadow: 15px 15px 30px blue,-3px -3px blue;
+        border-radius: 1rem;
+        display: block;
+        margin: 20px auto;
+        width: fit-content;
+            
+    }
+}
+.sechea{
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+    color: blue;
+}
+.active{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
+
+/* work of help button */
+#helpbtn{
+    height: 13vh;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    animation-fill-mode: forwards;
+}
+#helpbtn:hover{
+    transform: scale(1.4);
+}
+#helpcon{
+    border: springgreen 2px solid;
+    display: none;
+    text-align: center;
+    border-radius: 30px;
+    background: black;
+    position: fixed;
+    transform: scale(0.8);
+    bottom: 100px;
+    right: 20px;
+    box-sizing: border-box;
+    animation-fill-mode: forwards;
+}
+
+.inp{
+    border-radius: 20px;
+    margin: 10px;
+    background: rgb(0, 105, 0);
+    border: springgreen 2px solid;
+    color: white;
+    height: 40px;
+    width:80%;
+    padding: 5px;
+    font-size: 1.1rem;
+    box-sizing: border-box
+}
+#quear{
+    padding: 10px;
+    height: 150px;
+    font-size: 0.8rem;
+    box-sizing: border-box
+}
+#qebtn{
+    padding: 10px 30px;
+    margin: 20px;
+    text-decoration: none;
+    background: rgb(58, 182, 42);
+    color: white;
+    border-radius: 15px;
+    border: springgreen 2px solid;
+    margin-top: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#cico{
+    height: 30px;
+    float: right;
+    margin: 10px 20px 0px 0px;
+    cursor: pointer;
+}
+#cico:hover{
+    transform: scale(1.3);
+}
