@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163708086-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-163708086-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/desktop.css">
+    <link rel="stylesheet" href="/animation.css">
+    <link rel="stylesheet" href="/about.css">
+    <link rel="stylesheet" media="screen and (max-width: 850px)" href="/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="/logo.png" type="image/icon type">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script data-ad-client="ca-pub-9440571284174897" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+    <!-- navigation bar work starts -->
+    <nav id="navabar">
+        <div id="logo" class="navpart">
+            <img src="/logo.png" alt="2nd try.com" id="logoimg">
+        </div>
+        <img src="/Hicon.png" alt="2nd try.com" id="ham">
+        <div id="navcontain">
+            <div class="items"> <a href="/">Home</a></div>
+            <div class="items"> <a href="Registration.html">Registration</a></div>
+            <div class="items"><a href="Notification.html">Notifications</a></div>
+            <div class="items"><a href="Videos.html">Videos</a></div>
+            <div class="items active"><a href="about.html">About Us</a></div>
+        </div>
+    </nav>
+
+    <div id="navphone">
+        <img src="/close-icon.png" alt="close" id="cicoham">
+        <ul>
+            <li class="hamitem" id="hindex"><a href="/">Home</a></li>
+            <li class="hamitem" id="hreg"><a href="Registration.html">Registration</a></li>
+            <li class="hamitem" id="hnoti"><a href="Notification.html">Notification</a></li>
+            <li class="hamitem" id="hvid"><a href="Videos.html">Videos</a></li>
+            <li class="hamitem" id="habout"><a class="hactive" href="about.html">About us</a></li>
+        </ul>
+    </div>
+
+    <!-- navigation bar work ends -->
+
+    <section id="about">
+
+        <h1 class="sechea" id="hhh">About Our Site</h1>
+        <p class="sitedec">This website <b> www.gamerewards.tech</b> was hosted back on 2nd April 2020, After a hard work of
+            30 days by Our team members. The site uses the server of DigitalOcean.com. The site was developed with the
+            aim of developing the game community and obviously to generate some income this site also helps the gamers
+            with good gaming skills to earn some money by performing their skills. We host tournaments where people can
+            participate and win prizes and rewards.</p>
+
+        <h1 class="sechea" id="hhh">Why we not Others?</h1>
+        <p class="sitedec">Nice thought why should you choose us not others as there are many mare alternatives and they
+            are also offering same things, but as our prizes and rewards are far better than other alternatives that are
+            currently available in the Market. You can compare it by Yourself also.</p>
+
+        <h1 class="sechea" id="hhh">Our Team</h1>
+        <ul id="devs">
+            <li>Aitreya Verma(Developer & Maintainer)</li>
+            <li>Ayush Patel (Promotion & Managment)</li>
+        </ul>
+
+        <div id="conus">
+            <h1 class="sechea" id="hhh">Contact US </h1>
+            <h2>Via Email</h2>
+            <ul>
+                <li><a
+                        href="mailto:gamerewards101@gmail.com?subject=Hello i have contacted you regarging gamerewards.tech">Game
+                        Rewards Official</a></li>
+                <li><a href="mailto:abhiolx1@gmail.com?subject=Hello i have contacted you regarging gamerewards.tech">Aitreya
+                        Verma Mail</a></li>
+                <li><a
+                        href="mailto:ayush223456789@gmail.com?subject=Hello i have contacted you regarging gamerewards.tech">Ayush
+                        Patel Mail</a></li>
+            </ul>
+
+            <p class="sitedec">You can also contact us through help Button which is located on bottom right of every
+                page.</p>
+
+        </div>
+        <h1 class="sechea" id="hhh">Our Privacy policy</h1>
+        <div class="cont">
+            <iframe src="/Privacypolicy" height="300px" id=pripo>
+                <p>Your browser does not support iframes,Please switch to chrome or kindly update your browser</p>
+            </iframe>
+        </div>
+
+    </section>
+
+    <!-- Help button Work -->
+    <a><img id="helpbtn" src="/help.png" alt="Help Button"></a>
+    <div id="helpcon">
+        <img src="/close-icon.png" alt="close" id="cico">
+        <br id="brr">
+        <form id="form" action="/abt" method="post">
+            <p> Name</p>
+            <div>
+                <input name="name" type="text" id="name" class="inp" required>
+            </div>
+            Email:
+            <div>
+                <input name="email" type="email" class="inp" id="email" required>
+            </div>
+            Your Query:
+            <div>
+                <textarea name="query" cols="40" rows="10" class="inp" id="quear" required></textarea>
+            </div>
+            <button id="qebtn" type="submit">Submit</button>
+        </form>
+        <h3 id="succ" style="display: none; margin: 20px;">Your Query has been Submitted Successfully.We will try to fix
+            it ASAP.</h3>
+    </div>
+    <!-- Footer button Work Starts Here -->
+    <footer>
+        All &copy; Rights are Reserved by Gamerewards.tech
+    </footer>
+    <script src="/help btn.js"></script>
+    <script src="/ham menu.js"></script>
+    <script src="/shared.js"></script>
+
+</body>
+
+</html>

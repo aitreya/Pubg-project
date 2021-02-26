@@ -1,0 +1,17 @@
+.download img{
+    height: 70px;
+}
+.download{
+    border-radius: 10px;
+    display: flex;
+    width:600px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+}
+@media(max-width: 650px){
+    .download{
+        width: 100%;
+        flex-direction: column;
+    }
+}
