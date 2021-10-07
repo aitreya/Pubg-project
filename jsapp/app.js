@@ -29,13 +29,13 @@ app.get("*", (req, res) => {
     res.status(200).sendFile(path.join(__dirname + '/../htmls/custom_404.html'));
 });
 
-mongoose.connect('mongodb://127.0.0.1/testbeta', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://aitreya:aitreya1@projectdb.w2ra7.mongodb.net/testbeta?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
 //server starting
 var server = app.listen(port, () => {
-    console.log(`The application started successfully on port ${port}`);
+    console.log(`The application started successfully on port localhost:${port}`);
 });
 
 var io = socket(server);

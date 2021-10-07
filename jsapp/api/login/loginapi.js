@@ -21,7 +21,7 @@ Router.use(expressSession);
 Router.use(passport.initialize());
 Router.use(passport.session());
 
-mongoose.connect('mongodb://localhost/testbeta', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://aitreya:aitreya1@projectdb.w2ra7.mongodb.net/testbeta?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
 const UserDetails = modules.UserDetails;
 let pubgregistermodule = modules.pubgregistermodule;
 let freefireregistermodule = modules.freefireregistermodule;
