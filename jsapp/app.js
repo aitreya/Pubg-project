@@ -22,14 +22,16 @@ app.use(getroutes)
 app.use(helproutes)
 app.use(payment)
 app.use(loginsystem.Router)
+app.get("/adduser", (req, res) => {
+    res.send(loginsystem.addUser('abhi','rikin@123'));
+});
 app.get("*", (req, res) => {
-    res.status(404).sendFile(path.join(__dirname + '/../htmls/custom_404.html'));
+    res.status(200).sendFile(path.join(__dirname + '/../htmls/custom_404.html'));
 });
 
-mongoose.connect('mongodb://localhost/testbeta', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://127.0.0.1/testbeta', { useNewUrlParser: true, useUnifiedTopology: true })
 let db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function () { });
 
 //server starting
 var server = app.listen(port, () => {

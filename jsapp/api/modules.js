@@ -38,7 +38,7 @@ var regsch = new mongoose.Schema({
     name: String,
     regnop: String,
     regnof: String,
-});
+},{collection: 'Regmodule'});
 var regmodule = mongoose.model('Regmodule', regsch);
 
 const Schema = mongoose.Schema;
